@@ -9,6 +9,117 @@
     font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+
+    .home {
+        flex-direction: column;
+        gap: 8rem;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 45vw;
+    }
+
+    .services-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar a {
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 52%;
+    }
+
+    .header {
+        padding: 3rem 5%;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--second-bg-color);
+        flex-direction: column;
+        display: none;
+        transition: 0.3s ease;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-aboutme {
+        align-items: center;
+    }
+
+    .text-animation {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 48%;
+    }
+
+    .home-img img {
+        width: 70vw;
+    }
+
+    .project-item {
+        padding: 20px 30px;
+    }
+
+    .service-box .service-info {
+        padding: 3rem;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .service-info h4 {
+        font-size: 2.2rem;
+    }
+
+    .service-info p {
+        font-size: 1.4rem;
+    }
+}
+
+
 :root {
     --bg-color: #222831;
     --second-bg-color: #393E46;
